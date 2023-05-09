@@ -1,0 +1,15 @@
+.kartochka_uslugi_content{
+    width: 100%;
+    display: flex;
+}
+.kartochka_uslugi_galereya .main_img{
+    width: 100%;
+    height: 440px;
+
+}
+.kartochka_uslugi_galereya img{
+    width: 15%;
+}
+.kartochka_uslugi_galereya img:nth-child(1){
+    order:0;
+}

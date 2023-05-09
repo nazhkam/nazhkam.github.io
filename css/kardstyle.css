@@ -1,0 +1,155 @@
+.kartochka_uslugi_close{
+    position: fixed;
+    z-index: 1;
+    right: 20px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 19px;
+    text-align: center;
+    line-height: 21px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    opacity: .5;
+    transition: all .3s;
+}
+.kartochka_uslugi_close:hover{
+    opacity: 1;
+    transition: all .3s;
+}
+.kartochka_uslugi_zagolovok{
+    position: absolute;
+    font-size: 20px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));;
+    color:#fff;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    left: 0;
+    padding: 3%;
+}
+.kartochka_uslugi_zagolovok main{
+    font-weight: bold;
+    font-size: 30px;
+} 
+.kartochka_uslugi{
+    display: none;
+    background-color:#fafafa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 5px;
+    transition: all .5s;
+    overflow: auto;
+    z-index: 3;
+    scroll-behavior: smooth;
+    
+}
+.kartochka_uslugi_kartinka{
+    position:relative;
+    display: block;
+    margin: 0 auto;
+    width: 81%;
+    height: 80%;
+    overflow: hidden;
+    border-radius:15px;
+}
+.kartochka_uslugi_kartinka img{
+    width: 100%;
+}
+.text_content{
+    width: 100%;
+}
+.kartochka_uslugi_galereya img{
+    width: 32%;
+    height: auto;
+    cursor: pointer;
+}
+.obr_svyaz{
+    cursor: pointer;
+    color: #f90;
+}
+.kartochka_uslugi_button{
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    padding: 13px 25px;
+    text-transform: uppercase;
+    background-color: #FDD600;
+    color: #000;
+    /* height: 40px; */
+    width: auto;
+    /* margin: auto auto; */
+    /* margin-left: 50px; */
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0px 0px 10px 3px #9b860d;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+   
+}
+.kartochka_uslugi_button::before{
+    position: absolute;
+    content:'';
+    width: 5px;
+    background-color: rgba(255, 255, 255, 0.555);
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.555);
+    top: -5px;
+    left: -30px;
+    height: 150%;
+    transform: rotate(45deg);
+   
+}
+.kartochka_uslugi_button:hover:before{
+    transition: all .8s;
+    left: 250px;
+}
+.kartochka_uslugi_opisanie{
+    padding: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color:#212529;
+}
+.kartochka_uslugi_opisanie a{
+    text-decoration: none;
+}
+.kartochka_uslugi_opisanie b{
+    font-size: 22px;
+}
+.kartochka_uslugi_opisanie galka{
+    color: #f90;
+}
+
+
+.top_content{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.tehnika_info{
+    margin-top: 50px;
+    width: 50%;
+}
+.tehnika_info .kartochka_uslugi_button{
+
+    position: static;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 25px;
+    text-align: center;
+    
+}
+.tehnika_info a{
+    text-decoration: none;
+    color: #f90;
+}
+.tehnika_info .kartochka_uslugi_button::before,
+.tehnika_info .kartochka_uslugi_button::after{
+    display: none;
+}

@@ -1,0 +1,219 @@
+@media screen and (max-width:590px){
+    body{
+        background-size:cover;
+        width: 100%;
+    }
+    body.lock{
+        overflow: hidden;
+    }
+    
+    .header{
+        height:40px;
+    }
+    .header .header_menu{
+        display: none;
+    }
+    .header .header_logo{
+        left: 0;
+    }
+    .header_logo img{
+        height:40px;
+    }
+    .header_button{
+        margin-left: 0;
+    }
+    .header .header_contacts{
+        display: none;
+    }
+    .blocks{
+        display: none;
+    }
+    
+    .uslugi_container{
+        display: grid;
+        grid-template-columns: 1fr  ;
+    }
+    .usluga{
+        margin: 0 auto;
+        margin-top:15px ;
+    }
+    .usluga::before{
+        background-color:rgba(0, 0, 0, 0.281);
+    }
+    .burger_outer{
+        display: block;
+        overflow: hidden;
+        position: fixed;
+        top: 40px;
+        left: 0;
+        width: auto;
+        height:auto;
+        z-index: 2;
+    }
+   
+    .burger_menu{
+        margin-top: 40px;
+        padding-top: 25px;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        top: 0;
+        right: -100%;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        z-index: 2;
+        transition: right .5s;
+
+    }
+    .burger_menu li{
+        list-style-type: none;
+        margin: 15px 15px;
+        color: #fff;
+    }
+    .burger_menu li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .burger_menu_active{
+        right: 0;
+
+    }
+    .burger_nav_uslugi{
+        position: relative;
+    }
+    .burger_nav_uslugi_menu{
+        position: absolute;
+        top: 100%;
+    }
+    .burger_nav_uslugi_menu_show{
+        position:static;
+
+    }
+    .burger_nav_uslugi_item {
+        border-bottom:solid 1px #fff;
+        height: 1px;
+        opacity: 0;
+        transition: height 1s, opacity 0s;
+    }
+    .uslugi_show{
+        height: 40px;
+        opacity: 1;
+        transition: height .5s, opacity 2s;
+    }
+    .burger_toggle{
+        position: absolute;
+        height:40px;
+        width: 40px;
+        top: 0;
+        right: 5px;
+        cursor: pointer;
+        transition: all 1s;
+        z-index: 100;
+       
+    }
+    .burger_toggle span{
+        position: absolute;
+        top: 18px;
+        width: 100%;
+        height: 3px;
+        background-color: #f90;
+        transition: all 0.5s;
+    }
+    .burger_toggle::before,
+    .burger_toggle::after{
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: #f90;
+        transition: all 0.5s;
+    }
+    .burger_toggle::before{
+        top: 5px;
+    }
+    .burger_toggle::after{
+        bottom: 5px;
+    }
+    .burger_toggle.active::after{
+        transform: rotate(45deg);
+        bottom:20px;
+        background-color:#fff;
+        
+    }
+    .burger_toggle.active::before{
+        transform: rotate(-45deg);
+        top:17px;
+        background-color:#fff;
+    }
+    .burger_toggle.active span{
+        transform: scale(0);
+    }
+    .form_image{
+        display: none;
+    }
+    .main_form{
+        width: 100%;
+        padding: 35px;
+        text-align: center;
+    }
+    .kontakti_container{
+        flex-wrap: wrap;
+    }
+    .kontakti_informacia{
+        width: 100%;
+      
+    }
+    .kartochka_uslugi_zagolovok{
+        top:0;
+        left: 0;
+        
+        font-size: 15px;
+    }
+    .kartochka_uslugi_zagolovok main{
+        font-size: 20px;
+    }
+    .kartochka_uslugi_kartinka{
+        height: auto;
+    }
+    .kartochka_uslugi_button{
+        position: fixed;
+        top: 95%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .kartochka_uslugi_opisanie{
+        padding: 10px;
+        padding-bottom: 50px;
+    }
+    .top_content{
+        flex-wrap: wrap;
+    }
+    .tehnika_info{
+        margin-top: 0px;
+        width: 100%;
+    }
+    .gallery{
+        width: 100%;
+    }
+    .tehnika_info .kartochka_uslugi_button{
+
+        position: fixed;
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        top: 95%;
+        
+    }
+    footer div{
+        width: 100%;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+
+}
